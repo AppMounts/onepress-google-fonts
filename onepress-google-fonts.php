@@ -10,6 +10,11 @@
  * License: Copyright by Sergey Fritzler
  */
 
+/* Sicherheitsabfrage */
+if (! class_exists('WP')) {
+    die();
+}
+
 define('GDPR_GF_VERSION', 1.0);
 
 add_action( 'wp_enqueue_scripts', function () {
